@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Artikel - Bhinneka.ID</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f2f2f7;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1.2rem;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+        font-size: 1.1rem;
+      }
+
+      nav a:hover {
+        color: #d13557;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 3rem 1rem;
+        background: linear-gradient(90deg, #d13557, #4e3aa8);
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 3rem;
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 1.2rem;
+      }
+
+      .card-content h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.3rem;
+      }
+
+      .card-content p {
+        color: #777;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        background: #d13557;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .btn:hover {
+        background: #b42d49;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="tentang.html">Tentang Saya</a>
+    </nav>
+
+    <div class="hero">
+      <h1>Artikel Ilmiah Populer</h1>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <img
+          src="https://source.unsplash.com/600x400?culture"
+          alt="Artikel 1"
+        />
+        <div class="card-content">
+          <h3>Bhinneka Tunggal Ika</h3>
+          <p>Mengenal kekayaan budaya dan keberagaman yang ada di Nusantara.</p>
+          <a href="artikel.html"><a class="btn" href="#">Baca Selengkapnya </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
